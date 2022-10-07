@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guess</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h2>I am thinking a number between 1-100</h2>
+        <h3>Can you guess it</h3>
+        <input type="text" placeholder="Num" id="guess" /><br />
+        <!-- dont add your event listeners here -->
+        <button id="my_btn">GUESS</button>
+        <p id="message 1">No.Guess:0</p>
+        <p id="message 2">Guessed number is:none</p>
+        <p id="message 3"></p>
+    </div>
+    <script>
+        btn.addEventListener("keypress", function(play) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                document.getElementById("myBtn").click();
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
