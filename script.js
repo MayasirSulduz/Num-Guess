@@ -7,7 +7,7 @@ var no_of_guesses = 0;
 var guesses_num = [];
 
 // do it like this
-btn.addEventListener("click", play);
+// btn.addEventListener("click", play);
 
 function play() {
     var user_guess = document.getElementById("guess").value;
@@ -52,4 +52,8 @@ function play() {
         }
     }
 }
-//TODO: user can enter decimal  numbers too
+document.getElementById("guess").addEventListener("keypress", (event) => {
+        if (event.key === "Enter")
+            play()
+    })
+    //TODO: user can enter decimal  numbers too
