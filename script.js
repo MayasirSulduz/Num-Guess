@@ -47,13 +47,13 @@ function play() {
                 confetti(Object.assign({}, defaults, { particleCount: 100, colors: ['#808000', '#800080', '#C0C0C0'], origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
             }, 250);
             msg1.textContent = "Yahh You won it!!🎉";
-            msg2.textContent = "The number was" + answer;
+            msg2.textContent = "The number was " + answer;
             msg3.textContent = "You guessed it in " + no_of_guesses + " guesses";
         }
     }
 }
-document.getElementById("guess").addEventListener("keypress", (event) => {
-        if (event.key === "Enter")
-            play()
-    })
-    //TODO: user can enter decimal  numbers too
+// document.getElementById("guess").addEventListener("keypress", (event) => {
+//         if (event.key === "Enter")
+//             play()
+//     })
+//TODO: user can enter decimal  numbers too
